@@ -121,6 +121,9 @@
     <Reference Include="Mono.Data.Sqlite">
       <HintPath>Assets\Scripts\Database\Mono.Data.Sqlite.dll</HintPath>
     </Reference>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>Assets\Plugins\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="EchoGrid.CSharp.Plugins.csproj">
@@ -134,11 +137,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\Doxygen\DoxygenWindow.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\GvrAudioListenerEditor.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\GvrAudioRoomEditor.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\GvrAudioSoundfieldEditor.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\GvrAudioSourceEditor.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\GvrGazeEditor.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Editor\GvrMenu.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Editor\GvrViewerEditor.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Editor\StereoControllerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Editor\Doxygen\ReadMe.txt" />
     <None Include="Assets\Editor\Doxygen\Resources\BaseDoxyfile.txt" />
     <None Include="Assets\Fonts\OFL.txt" />
+    <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
+    <None Include="Assets\GoogleVR\Legacy\Resources\SolidColor.shader" />
+    <None Include="Assets\GoogleVR\Legacy\Resources\UnlitTexture.shader" />
+    <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Resources\GameData\levels.txt" />
     <None Include="Assets\Resources\GameData\levels_T_tutorial.txt" />
     <None Include="Assets\Resources\GameData\test.txt" />
